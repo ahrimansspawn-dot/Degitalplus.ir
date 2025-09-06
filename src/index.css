@@ -142,6 +142,23 @@
     100% { background-position: calc(200px + 100%) 0; }
   }
 
+  @keyframes backgroundMove {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+  }
+
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
   .animate-fade-in-up {
     animation: fadeInUp 0.6s ease-out;
   }
@@ -154,5 +171,19 @@
     animation: shimmer 2s infinite;
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
     background-size: 200px 100%;
+  }
+
+  .animate-background {
+    animation: backgroundMove 20s ease-in-out infinite;
+    background-size: 120% 120%;
+  }
+
+  .animate-gradient {
+    animation: gradientShift 8s ease infinite;
+    background-size: 200% 200%;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
   }
 }

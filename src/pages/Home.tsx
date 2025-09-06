@@ -55,11 +55,12 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-hero opacity-90"></div>
+        <div className="absolute inset-0 bg-gradient-hero opacity-90 animate-gradient"></div>
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-background"
           style={{ backgroundImage: `url(${heroImage})` }}
         ></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-secondary/20 animate-gradient"></div>
         <div className="relative container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center text-white">
             <Badge className="mb-6 bg-white/20 text-white border-white/30 backdrop-blur">
@@ -139,7 +140,7 @@ const Home = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-primary text-white">
+      <section className="py-20 bg-gradient-primary text-white animate-gradient relative overflow-hidden">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             همین امروز عضو شوید
