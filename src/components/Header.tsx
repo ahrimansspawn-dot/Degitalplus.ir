@@ -50,35 +50,35 @@ const Header = () => {
           </div>
 
           {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-6 space-x-reverse">
+          <nav className="hidden md:flex items-center space-x-8 space-x-reverse">
             <Link 
               to="/" 
-              className={`font-medium transition-colors hover:text-primary ${
-                isActive('/') ? 'text-primary' : 'text-foreground'
+              className={`font-medium px-3 py-2 rounded-lg transition-all duration-300 hover:text-primary hover:bg-primary/10 ${
+                isActive('/') ? 'text-primary bg-primary/20' : 'text-foreground'
               }`}
             >
               خانه
             </Link>
             <Link 
               to="/products" 
-              className={`font-medium transition-colors hover:text-primary ${
-                isActive('/products') ? 'text-primary' : 'text-foreground'
+              className={`font-medium px-3 py-2 rounded-lg transition-all duration-300 hover:text-primary hover:bg-primary/10 ${
+                isActive('/products') ? 'text-primary bg-primary/20' : 'text-foreground'
               }`}
             >
               محصولات
             </Link>
             <Link 
               to="/presale" 
-              className={`font-medium transition-colors hover:text-primary ${
-                isActive('/presale') ? 'text-primary' : 'text-foreground'
+              className={`font-medium px-4 py-2 rounded-lg bg-gradient-primary text-white shadow-medium hover:shadow-strong transform hover:scale-105 transition-all duration-300 ${
+                isActive('/presale') ? 'bg-primary-hover' : ''
               }`}
             >
               پیش فروش
             </Link>
             <Link 
               to="/about" 
-              className={`font-medium transition-colors hover:text-primary ${
-                isActive('/about') ? 'text-primary' : 'text-foreground'
+              className={`font-medium px-3 py-2 rounded-lg transition-all duration-300 hover:text-primary hover:bg-primary/10 ${
+                isActive('/about') ? 'text-primary bg-primary/20' : 'text-foreground'
               }`}
             >
               درباره ما
